@@ -47,7 +47,7 @@ class App extends React.Component {
           <p id="author"> - {this.state.author}</p>
         </div>
         <button id="new-quote" className="btn quote-button" onClick={this.updateQuote}>Quote</button>
-        <a className="twitter-share-button btn tweet" href={href} data-size="large">
+        <a className="btn tweet" href={href} data-size="large">
           Tweet
         </a>
       </div>
