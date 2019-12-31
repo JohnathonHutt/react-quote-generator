@@ -14,23 +14,23 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://api.quotable.io/random')
+    fetch('http://quotes.stormconsultancy.co.uk/random.json')
       .then(response => response.json())
       .then(data => {
       this.setState({
-        quote: data.content,
-        author: data.author
+        author: data.author,
+        quote: data.quote
       });
     })
   }
 
   updateQuote() {
-    fetch('https://api.quotable.io/random')
+    fetch('http://quotes.stormconsultancy.co.uk/random.json')
       .then(response => response.json())
       .then(data => {
       this.setState({
-        quote: data.content,
-        author: data.author
+        author: data.author,
+        quote: data.quote,
       });
     })
   }
